@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+    margin-top: 100px;
+}
+#one{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#two{
+    background-color:hsl(184, 100%, 22%);
+}
+#three{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.box{
+    position: relative;
+    padding-left: 40px;
+}
+.car-name{
+    font-size: 45px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.car-d{
+    padding-top: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+.img-al{
+    padding-top: 45px;
+}
+#b-1{
+    color: hsl(31, 77%, 52%);
+}
+#b-2{
+    color:hsl(184, 100%, 22%);
+}
+#b-3{
+    color: hsl(179, 100%, 13%);
+}
+button{
+    height: 40px;
+    width: 120px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+@media screen and (max-width: 420px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    #one{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    #three{
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+}
